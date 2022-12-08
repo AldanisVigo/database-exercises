@@ -9,10 +9,16 @@ USE codeup_test_db;
 -- First write your queries as separate INSERT statements for each record and test. You should see no output.
 -- Refactor your script to use a single INSERT statement for all the records and test it again. Again, this should not generate any output.
 
+
+-- Open up albums_seeder.sql, after your USE statement, add a TRUNCATE query to delete all records from the table before inserting.
+TRUNCATE albums;
+
+-- Test your change and make sure you no longer get any duplicate records when running albums_seeder.sql.
+
 INSERT INTO albums(artist,name,release_date,sales,genre) VALUES
 ('Michael Jackson','Thriller',1982,50.2,'Pop, post-disco, funk, rock'),
 ('AC/DC','Back in Black',1980,30.1,'Hard Rock'),
-('Whiteney Houston','Their Bodyguard',1992,28.7,'R&B, soul, pop, soundtrack'),
+('Whitney Houston','Their Bodyguard',1992,28.7,'R&B, soul, pop, soundtrack'),
 ('Pink Floyd','The Dark Side of The Moon',1973,24.8,'Progressive rock'),
 ('Eagles','Their Greatest Hits 1971-1975',1976,41.2,'Country rock, soft rock, folk rock'),
 ('Eagles','Hotel California',1976,31.8,'Soft rock'),
