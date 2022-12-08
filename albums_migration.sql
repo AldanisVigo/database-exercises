@@ -23,4 +23,4 @@ CREATE TABLE albums(
 );
 
 
-
+source albums_seeder.sql;

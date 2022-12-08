@@ -11,12 +11,16 @@ USE codeup_test_db;
 -- Write SELECT statements to output each of the following with a caption:
 
 -- All albums in your table.
-SELECT * FROM albums;
+SELECT name AS 'All Albums' FROM albums;
+
+UPDATE albums SET sales = sales * 10;
+
+SELECT name AS 'Album', sales AS 'Sales' FROM albums;
 
 -- All albums released before 1980
-SELECT * FROM albums WHERE release_date < 1980;
+SELECT name, artist AS 'Albums Before 1980' FROM albums WHERE release_date < 1980;
 
 -- All albums by Michael Jackson
-SELECT * FROM albums WHERE artist = 'Michael Jackson';
+SELECT name, artist AS 'Albums by Michael Jackson' FROM albums WHERE artist = 'Michael Jackson';
 
 
