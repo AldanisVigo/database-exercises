@@ -17,7 +17,7 @@ SELECT emp_no FROM salaries ORDER BY salary DESC LIMIT 5;
 # The first five results are your first page.
 # The five after that would be your second page, etc.
 # Update the previous query to find the tenth page of results.
-SELECT emp_no FROM salaries ORDER BY salary DESC LIMIT 5 OFFSET 45;
+SELECT emp_no FROM salaries ORDER BY salary DESC LIMIT 5 OFFSET 46;
 
 
 
